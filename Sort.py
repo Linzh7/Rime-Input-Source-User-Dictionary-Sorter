@@ -29,7 +29,10 @@ dicts = []
 for i in range(len(data)):
     if ('#' in data[i]) or (data[i] == '\n'):
         continue
-    dicts.append(data[i].split())
+    tmp = data[i].split()
+    if len(tmp) == 1:
+        continue
+    dicts.append(tmp)
 
 # prepare for sort
 swap(dicts)
