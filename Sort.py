@@ -17,8 +17,8 @@ def swap(a=[]):
 
 
 # open users dict, modify file name as urs
-f1 = open("./flypy_top.txt", "r")
-f2 = open("./flypy_top_out.txt", "w")
+f1 = open("./flypy_user.txt", "r")
+f2 = open("./flypy_user_out.txt", "w")
 
 data = f1.readlines()
 
@@ -38,7 +38,7 @@ for i in range(len(data)):
 swap(dicts)
 
 # sort!
-dicts.sort
+dicts.sort()
 
 # return to row order
 swap(dicts)
