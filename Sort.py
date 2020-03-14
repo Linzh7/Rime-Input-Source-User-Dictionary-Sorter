@@ -17,8 +17,8 @@ def swap(a=[]):
 
 
 # open users dict, modify file name as urs
-f1 = open("./flypy_user.txt", "r")
-f2 = open("./flypy_user_out.txt", "w")
+f1 = open("./flypy_top.txt", "r")
+f2 = open("./flypy_top_out.txt", "w")
 
 data = f1.readlines()
 
@@ -41,8 +41,8 @@ swap(dicts)
 dicts.sort
 
 # then format into the official form of Rime & write this into new file
-for i in range(len(dum)):
-    print("{}\t{}".format(dum[i][0], dum[i][1]), file=f2)
+for i in range(len(dicts)):
+    print("{}\t{}".format(dicts[i][0], dicts[i][1]), file=f2)
 
 # close file r&w
 f1.close()
