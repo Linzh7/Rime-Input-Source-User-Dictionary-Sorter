@@ -40,6 +40,9 @@ swap(dicts)
 # sort!
 dicts.sort
 
+# return to row order
+swap(dicts)
+
 # then format into the official form of Rime & write this into new file
 for i in range(len(dicts)):
     print("{}\t{}".format(dicts[i][0], dicts[i][1]), file=f2)
