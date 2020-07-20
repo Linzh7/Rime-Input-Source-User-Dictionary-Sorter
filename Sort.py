@@ -1,7 +1,7 @@
 ###############################################
 # have to confess, mb 'with open' is a better choice for this
 # well, dont mind that
-#     - form 'stupid' Linzh
+#     - from Linzh
 ###############################################
 import os
 import sys
@@ -17,8 +17,8 @@ def swap(a=[]):
 
 
 # open users dict, modify file name as urs
-f1 = open(os.getcwd() + "/flypy_top.txt", "r")
-f2 = open(os.getcwd() + "/flypy_top_out.txt", "w")
+f1 = open("./flypy_user.txt", "r")
+f2 = open("./flypy_user_out.txt", "w")
 
 data = f1.readlines()
 
