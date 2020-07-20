@@ -3,7 +3,6 @@
 # well, dont mind that
 #     - from Linzh
 ###############################################
-import os
 import sys
 
 # def a swap function
